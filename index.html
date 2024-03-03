@@ -18,131 +18,112 @@
 
   <!-- header -->
   <section class="hero is-info is-bold">
-    <!-- todo: change assignment and name -->
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
           Data Visualization Assignment
         </h1>
         <h2 class="subtitle">
-          Student Name
+          Amine El Khattabi
         </h2>
       </div>
     </div>
-
-    <!-- change navigation if needed -->
-    <div class="hero-foot">
-      <div class="container">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-
-          <div class="navbar-brand">
-            <a class="navbar-item" href="#top">
-              <span class="icon">
-                <i class="fas fa-home"></i>
-              </span>
-              <span>Home</span>
-            </a>
-          </div>
-
-          <div id="main-navbar" class="navbar-menu">
-            <a class="navbar-item" href="#viz1">
-              <span class="icon">
-                <i class="fas fa-chart-area"></i>
-              </span>
-              <span>Visualization 1</span>
-            </a>
-          </div>
-
-          <div class="navbar-end">
-            <a class="navbar-item" href="#about">
-              <span class="icon">
-                <i class="fas fa-info-circle"></i>
-              </span>
-              <span>About</span>
-            </a>
-          </div>
-
-        </nav>
-      </div>
-    </div>
   </section>
 
   <section class="section">
     <div class="container content">
-      <!-- modify if necessary (move visualizations in separate pages) -->
-      <h2 id="viz1">Visualization 1</h2>
-
-      <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
-      </svg>
+      <h2 id="viz1">Cumulative Returns: ETFs vs Futures (2019-2023)</h2>
+      <img src="https://github.com/AmineELKHATTABI/plots-images/blob/main/Figure%202024-03-03%20235245%20(0).png?raw=true" alt="Cumulative Returns Plot" style="max-width: 100%; height: auto;">
 
       <h3>Interpretation</h3>
-
       <p>
-        Provide a brief discussion of how to interpret this visualization. Legends provided with the visualization can be self-explanatory, keep it short.
+        This line graph illustrates the cumulative returns for GLD ETF, SLV ETF, Gold Futures, and Silver Futures from 2019 to 2023. Each line represents the growth of a $1 investment in each asset over the time period. 
       </p>
 
       <h3>Discussion</h3>
-
       <p>
-        Provide a brief discussion of the key findings of the visualization, any challenges encountered creating the visualization etc.
-     
-      
+        The plot reveals that all assets experienced periods of growth and decline, with notable volatility around early 2020, likely due to market reactions to global events. Gold-related assets (GLD ETF and Gold Futures) moved closely together, suggesting similar market behavior, while Silver Futures showed the highest volatility.
       </p>
 
       <h3>Sources</h3>
-
       <p>
+        Data sourced from Yahoo Finance via the yfinance Python package.
+      </p>
 
+      <h2 id="viz2">Annual Mean Cumulative Returns (2019-2023)</h2>
+      <img src="https://github.com/AmineELKHATTABI/plots-images/blob/main/Figure%202024-03-03%20235245%20(1).png?raw=true" alt="Annual Mean Cumulative Returns Bar Chart" style="max-width: 100%; height: auto;">
 
-#output Visualization on the link
-        
+      <h3>Interpretation</h3>
+      <p>
+        The bar chart presents the annual mean cumulative returns for each asset, giving a clearer comparison of average yearly performance.
+      </p>
+
+      <h3>Discussion</h3>
+      <p>
+        The chart highlights the differences in average returns, with some years favoring one asset over others. The analysis could be deepened with an exploration of the underlying causes of these performance disparities, such as economic conditions or market sentiment.
+      </p>
+
+      <h2 id="viz3">Annual Volatility of GLD, SLV, Gold Futures, and Silver Futures</h2>
+      <img src="https://github.com/AmineELKHATTABI/plots-images/blob/main/Figure%202024-03-03%20235245%20(2).png?raw=true" alt="Annual Volatility Bar Chart" style="max-width: 100%; height: auto;">
+
+      <h3>Interpretation</h3>
+      <p>
+        This visualization shows the annual volatility, a measure of the dispersion of returns, for each investment asset.
+      </p>
+
+      <h3>Discussion</h3>
+      <p>
+        Silver Futures exhibit the highest volatility, indicating a riskier asset compared to the others. GLD ETF appears to be the least volatile, suggesting it may be a more stable investment choice.
+      </p>
+
+      <h2 id="viz4">Sharpe Ratio of GLD, SLV, Gold Futures, and Silver Futures</h2>
+      <img src="https://github.com/AmineELKHATTABI/plots-images/blob/main/Figure%202024-03-03%20235245%20(3).png?raw=true" alt="Sharpe Ratio Bar Chart" style="max-width: 100%; height: auto;">
+
+      <h3>Interpretation</h3>
+      <p>
+        The Sharpe Ratio bar chart provides insight into the risk-adjusted returns of each asset, factoring in the volatility.
+      </p>
+
+      <h3>Discussion</h3>
+      <p>
+        Despite its high volatility, Silver Futures demonstrate a comparable Sharpe Ratio to other assets, indicating that the higher risk is counterbalanced by higher returns. This suggests that when adjusted for risk, Silver Futures' performance is competitive with the other assets.
       </p>
     </div>
   </section>
 
-  <hr class="container">
-
-  <!-- about section -->
-  <!-- fill in, or link to a personal web page  -->
+  <!-- The section below should be personalized with your information -->
   <section class="section">
     <div class="container content">
-      <h2 id="about">
-        About Me
-      </h2>
-
+      <h2 id="about">About Me</h2>
       <div class="media">
         <div class="media-left">
           <p class="image is-128x128">
-            <!-- replace with your profile image -->
-            <img src="https://raw.githubusercontent.com/mscfinance-big-data-viz/indiv-assignment-template/master/suicide_densityFR.png">
+            <!-- Insert your profile image here -->
+            <img src="https://via.placeholder.com/128" alt="Amine El Khattabi">
           </p>
         </div>
-
         <div class="media-content">
-            <p>
-              <!-- replace with your information -->
-              <strong>My name</strong>
-              <br/>
-              Brief biography describing your interests and skills, a profile photo, and/or links to your Github, Linkedin, and other <strong>professional</strong> social media accounts.
-              <br/>
-              <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
-              <a href="https://github.com/">
-                <span class="fab fa-github"></span>
-                <span>Github</span>
-              </a>
-              &bullet;
-              <a href="https://www.linkedin.com/">
-                <span class="fab fa-linkedin"></span>
-                <span>LinkedIn</span>
-              </a>
-            </p>
-
+          <p>
+            <strong>Amine El Khattabi</strong>
+            <br>
+            An enthusiastic finance student with a passion for data analysis and visualization. I strive to bridge the gap between finance and technology to generate insightful market analyses.
+            <br>
+            <!-- Insert your GitHub link here -->
+            <a href="https://github.com/">
+              <span class="fab fa-github"></span>
+              <span>Github</span>
+            </a>
+            &bullet;
+            <!-- Insert your LinkedIn link here -->
+            <a href="https://www.linkedin.com/">
+              <span class="fab fa-linkedin"></span>
+              <span>LinkedIn</span>
+            </a>
+          </p>
         </div>
       </div>
-
     </div>
   </section>
-
 
   <footer class="footer">
     <div class="content has-text-centered">
@@ -151,10 +132,10 @@
           <span class="fas fa-arrow-up"></span>
           <span>Back to Top</span>
         </a>
-        <br/>
+        <br>
         <a href="https://www.neoma-bs.fr/formations/masteres-specialises-masters-of-science-temps-partiel/msc-in-finance-and-big-data/presentation-du-programme">MSc Finance & Big Data / Data visualization</a>
         &bullet;
-        <a href="https://https://www.neoma-bs.fr/">Neoma Business School</a>
+        <a href="https://www.neoma-bs.fr/">Neoma Business School</a>
       </small>
     </div>
   </footer>
